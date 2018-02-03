@@ -1,3 +1,3 @@
-# density-matrix-master-equation
+# latihan github 
 
-This code is intended to solve a Markovian-loss density matrix master equation for a few body system (see https://link.springer.com/article/10.1140/epjst/e2016-60179-6 Eq. 8). We consider an ensamble of N cold atoms which are placed in neighbouring sites of a one- or two-dimensional lattice. We analogue the transitions between a ground state and a highly excited state as a spin-1/2 system. As the number of basis scales as 2^{2N}, the code can only efficiently simulate up to N = 10. Although greater number is possible, we would not recommend it as it would be computationally demanding.    
+This repository is intended to practice my github skill
