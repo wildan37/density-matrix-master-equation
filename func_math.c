@@ -62,4 +62,15 @@ double pangkat (double x, int N){
   return total;
 }
 
+double jumlah (double x[], int N){
 
+  int i;
+  double sum;
+
+  sum = 0.0;
+  for (i = 0; i < N; i+=1){
+    sum += x[i];
+  }
+
+  return sum;
+}

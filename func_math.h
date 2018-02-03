@@ -20,6 +20,6 @@
 #include "stdlib.h"
 
 int faktorial (int x); 
-double  pangkat (double x, int N); 
-
+double pangkat (double x, int N); 
+double jumlah (double x[], int N);
 
