@@ -21,22 +21,23 @@
 
 int main (int argc, char *argv[]){
 
-  int a1;
   int in;
-  double a2;
-  double a3;
+  double a[n];
   double w[n];
 
-  a1 = faktorial (5);
-  a2 = pangkat (2, 2);
+  a[0] = faktorial (5);
+  a[1] = pangkat (2, 2);
 
   for (in = 0; in < n; in+=1){
     w[in] = pangkat(1, in);
   }
-  a3 = jumlah(w, n);
+  a[2] = jumlah(w, n);
+  a[3] = rata2 (w, n); 
+  a[4] = stdev(w, n);
 
-  printf ( "%d\t%.2lf\t%.2lf\t%.2lf\n", 
-      a1, a2, a3, a3/n );
-  
+  for (in = 0; in < n; in+=1){
+   printf ("%.2lf\n", a[in] );
+  }
+
   return 0;
 }

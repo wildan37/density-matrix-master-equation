@@ -18,8 +18,10 @@
 
 #include "stdio.h"
 #include "stdlib.h"
+#include "math.h"
 
 int faktorial (int x); 
 double pangkat (double x, int N); 
 double jumlah (double x[], int N);
-
+double rata2 (double x[], int N);
+double stdev (double x[], int N);

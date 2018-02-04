@@ -74,3 +74,37 @@ double jumlah (double x[], int N){
 
   return sum;
 }
+
+double rata2 (double x[], int N){
+
+  int i;
+  double sum;
+
+  sum = 0.0;
+  for (i = 0; i < N; i+=1){
+    sum += x[i];
+  }
+
+  return sum/N;
+}
+
+double stdev (double x[], int N){
+
+  int i;
+  double sum;
+  double ave;
+
+  sum = 0.0;
+  for (i = 0; i < N; i+=1){
+    sum += x[i];
+  }
+
+  ave = sum/N;
+  sum = 0.0;
+  for (i = 0; i < N; i+=1){
+    sum += ( (x[i] - ave)*(x[i] - ave) );
+  }
+  
+  return sqrt(sum);
+
+}
