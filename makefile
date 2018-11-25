@@ -1,24 +1,20 @@
-CC = gcc
-CFLAGS = -O2
-DEPS = func_math.h 
+CC=gcc
+CFLAGS=-O2
+DEPS=head_ad.h
 
-OBJ = main_p.o func_math.o
+OBJ=main_ad.o math_func.o
 
-all: $(OBJ)
-	$(CC) $(CFLAGS) -lm $(OBJ) 
+all:${OBJ}
+	${CC} ${CFLAGS} -lm ${OBJ}
 
-debug: 
-	$(MAKE) CFLAGS="-g"
+debug:
+	${MAKE} CFLAGS="-g"
 
-func_math.o: func_math.c $(DEPS)
-	$(CC) -c $(CFLAGS) func_math.c
+main_ad.o: main_ad.c ${DEPS}
+	${CC} -c ${CFLAGS} main_ad.c
 
-main_p.o: main_p.c $(DEPS) 
-	$(CC) -c $(CFLAGS) main_p.c
+math_func.o: math_func.c ${DEPS}
+	${CC} -c ${CFLAGS} math_func.c
 
 clean:
-	rm -rf $(OBJ)
-
-
-
-
+	rm -f ${OBJ}
